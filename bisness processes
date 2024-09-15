@@ -1,0 +1,17 @@
+from rich.console import Console
+from rich.markdown import Markdown
+
+console = Console()
+
+process_description = """
+# Процесс добавления задачи
+
+1. **Пользователь открывает приложение.**
+2. **Выбирает опцию “Добавить задачу”.**
+3. **Вводит детали задачи (название, описание, дата и время).**
+4. **При необходимости прикрепляет документ.**
+5. **Сохраняет задачу.**
+"""
+
+markdown = Markdown(process_description)
+console.print(markdown)
